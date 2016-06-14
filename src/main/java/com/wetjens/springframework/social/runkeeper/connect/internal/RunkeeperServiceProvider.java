@@ -1,9 +1,14 @@
-package org.springframework.social.runkeeper.connect.internal;
+/*
+ * Copyright (C) 2016, Alphabet International GmbH
+ */
+
+package com.wetjens.springframework.social.runkeeper.connect.internal;
 
 import org.springframework.social.oauth2.AbstractOAuth2ServiceProvider;
 import org.springframework.social.oauth2.OAuth2Template;
-import org.springframework.social.runkeeper.api.Runkeeper;
-import org.springframework.social.runkeeper.api.internal.RunkeeperTemplate;
+
+import com.wetjens.springframework.social.runkeeper.api.Runkeeper;
+import com.wetjens.springframework.social.runkeeper.api.internal.RunkeeperTemplate;
 
 public class RunkeeperServiceProvider extends AbstractOAuth2ServiceProvider<Runkeeper> {
 
@@ -23,5 +28,4 @@ public class RunkeeperServiceProvider extends AbstractOAuth2ServiceProvider<Runk
     public Runkeeper getApi(String accessToken) {
         return new RunkeeperTemplate(accessToken);
     }
-
 }

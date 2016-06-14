@@ -1,4 +1,12 @@
-package org.springframework.social.runkeeper.api.internal;
+/*
+ * Copyright (C) 2016, Alphabet International GmbH
+ */
+
+package com.wetjens.springframework.social.runkeeper.api.internal;
+
+import java.io.IOException;
+import java.util.Collections;
+import java.util.List;
 
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.HttpOutputMessage;
@@ -6,10 +14,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.converter.HttpMessageNotWritableException;
-
-import java.io.IOException;
-import java.util.Collections;
-import java.util.List;
 
 class RunkeeperMessageConverter<T> implements HttpMessageConverter<T> {
 

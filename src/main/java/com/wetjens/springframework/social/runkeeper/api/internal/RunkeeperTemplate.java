@@ -1,13 +1,22 @@
-package org.springframework.social.runkeeper.api.internal;
+/*
+ * Copyright (C) 2016, Alphabet International GmbH
+ */
+
+package com.wetjens.springframework.social.runkeeper.api.internal;
+
+import java.util.Arrays;
+import java.util.List;
 
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
-import org.springframework.social.runkeeper.api.*;
 
-import java.util.Arrays;
-import java.util.List;
+import com.wetjens.springframework.social.runkeeper.api.FitnessActivity;
+import com.wetjens.springframework.social.runkeeper.api.HealthGraphOperations;
+import com.wetjens.springframework.social.runkeeper.api.Profile;
+import com.wetjens.springframework.social.runkeeper.api.Runkeeper;
+import com.wetjens.springframework.social.runkeeper.api.User;
 
 public class RunkeeperTemplate extends AbstractOAuth2ApiBinding implements Runkeeper {
 
@@ -30,5 +39,4 @@ public class RunkeeperTemplate extends AbstractOAuth2ApiBinding implements Runke
     public HealthGraphOperations healthGraph() {
         return new HealthGraphTemplate(getRestTemplate());
     }
-
 }

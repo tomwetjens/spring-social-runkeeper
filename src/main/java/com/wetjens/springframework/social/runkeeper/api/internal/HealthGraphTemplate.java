@@ -1,7 +1,16 @@
-package org.springframework.social.runkeeper.api.internal;
+/*
+ * Copyright (C) 2016, Alphabet International GmbH
+ */
 
-import org.springframework.social.runkeeper.api.*;
+package com.wetjens.springframework.social.runkeeper.api.internal;
+
 import org.springframework.web.client.RestTemplate;
+
+import com.wetjens.springframework.social.runkeeper.api.Feed;
+import com.wetjens.springframework.social.runkeeper.api.FitnessActivity;
+import com.wetjens.springframework.social.runkeeper.api.HealthGraphOperations;
+import com.wetjens.springframework.social.runkeeper.api.Profile;
+import com.wetjens.springframework.social.runkeeper.api.User;
 
 public class HealthGraphTemplate implements HealthGraphOperations {
 

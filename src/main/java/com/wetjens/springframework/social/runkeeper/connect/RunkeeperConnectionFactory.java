@@ -1,9 +1,14 @@
-package org.springframework.social.runkeeper.connect;
+/*
+ * Copyright (C) 2016, Alphabet International GmbH
+ */
+
+package com.wetjens.springframework.social.runkeeper.connect;
 
 import org.springframework.social.connect.support.OAuth2ConnectionFactory;
-import org.springframework.social.runkeeper.api.Runkeeper;
-import org.springframework.social.runkeeper.connect.internal.RunkeeperAdapter;
-import org.springframework.social.runkeeper.connect.internal.RunkeeperServiceProvider;
+
+import com.wetjens.springframework.social.runkeeper.api.Runkeeper;
+import com.wetjens.springframework.social.runkeeper.connect.internal.RunkeeperAdapter;
+import com.wetjens.springframework.social.runkeeper.connect.internal.RunkeeperServiceProvider;
 
 public class RunkeeperConnectionFactory extends OAuth2ConnectionFactory<Runkeeper> {
 
@@ -12,5 +17,4 @@ public class RunkeeperConnectionFactory extends OAuth2ConnectionFactory<Runkeepe
     public RunkeeperConnectionFactory(String clientId, String clientSecret) {
         super(PROVIDER_ID, new RunkeeperServiceProvider(clientId, clientSecret), new RunkeeperAdapter());
     }
-
 }

@@ -1,11 +1,16 @@
-package org.springframework.social.runkeeper.connect.internal;
+/*
+ * Copyright (C) 2016, Alphabet International GmbH
+ */
+
+package com.wetjens.springframework.social.runkeeper.connect.internal;
 
 import org.springframework.social.connect.ApiAdapter;
 import org.springframework.social.connect.ConnectionValues;
 import org.springframework.social.connect.UserProfile;
-import org.springframework.social.runkeeper.api.Profile;
-import org.springframework.social.runkeeper.api.Runkeeper;
-import org.springframework.social.runkeeper.api.User;
+
+import com.wetjens.springframework.social.runkeeper.api.Profile;
+import com.wetjens.springframework.social.runkeeper.api.Runkeeper;
+import com.wetjens.springframework.social.runkeeper.api.User;
 
 public class RunkeeperAdapter implements ApiAdapter<Runkeeper> {
 
@@ -37,5 +42,4 @@ public class RunkeeperAdapter implements ApiAdapter<Runkeeper> {
     public void updateStatus(Runkeeper runkeeper, String statusMessage) {
 
     }
-
 }

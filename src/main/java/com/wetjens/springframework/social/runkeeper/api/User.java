@@ -1,4 +1,8 @@
-package org.springframework.social.runkeeper.api;
+/*
+ * Copyright (C) 2016, Alphabet International GmbH
+ */
+
+package com.wetjens.springframework.social.runkeeper.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

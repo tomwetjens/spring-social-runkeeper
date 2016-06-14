@@ -1,8 +1,12 @@
-package org.springframework.social.runkeeper.api;
+/*
+ * Copyright (C) 2016, Alphabet International GmbH
+ */
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+package com.wetjens.springframework.social.runkeeper.api;
 
 import java.time.LocalDateTime;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class FitnessActivity {
 

@@ -1,13 +1,18 @@
-package org.springframework.social.runkeeper.api.internal;
+/*
+ * Copyright (C) 2016, Alphabet International GmbH
+ */
 
-import org.springframework.social.runkeeper.api.Feed;
-import org.springframework.social.runkeeper.api.FitnessActivity;
-import org.springframework.social.runkeeper.api.User;
-import org.springframework.web.client.RestTemplate;
+package com.wetjens.springframework.social.runkeeper.api.internal;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
+
+import org.springframework.web.client.RestTemplate;
+
+import com.wetjens.springframework.social.runkeeper.api.Feed;
+import com.wetjens.springframework.social.runkeeper.api.FitnessActivity;
+import com.wetjens.springframework.social.runkeeper.api.User;
 
 class FitnessActivityFeed implements Feed<FitnessActivity> {
 
